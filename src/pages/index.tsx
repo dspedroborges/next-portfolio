@@ -1,5 +1,8 @@
 import { BsEnvelope, BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
+import { VscChromeMaximize } from "react-icons/vsc";
+import { FaRegWindowMinimize } from "react-icons/fa";
+import { MdOutlineClose } from "react-icons/md";
 
 type OptionType = {
   name: string;
@@ -35,20 +38,32 @@ const projects = [
   }
 ];
 
+// VscChromeMaximize
+// FaRegWindowMinimize
+// MdOutlineClose
+
 export default function Home() {
   return (
     <div className="bg-gray-950 pt-16" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 192 192'%3E%3Cpath fill='%23353535' fill-opacity='0.44' d='M192 15v2a11 11 0 0 0-11 11c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H145v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11 13 13 0 1 1 .02 26 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43a6.1 6.1 0 0 0-3.03 4.87V143h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 181 164a11 11 0 0 0 11 11v2a13 13 0 0 1-13-13 12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84a6.1 6.1 0 0 0-4.87-3.03H145v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 124 181a11 11 0 0 0-11 11h-2a13 13 0 0 1 13-13c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43a6.1 6.1 0 0 0 3.03-4.87V145h-35.02a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 107 124a11 11 0 0 0-22 0c0 1.94 1.16 4.75 2.53 6.11l2.36 2.36a6.93 6.93 0 0 1 1.22 7.56l-.43.84a8.08 8.08 0 0 1-6.66 4.13H49v35.02a6.1 6.1 0 0 0 3.03 4.87l.84.43c1.58.79 4 .4 5.24-.85l2.36-2.36a12.04 12.04 0 0 1 7.51-3.11A13 13 0 0 1 81 192h-2a11 11 0 0 0-11-11c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V145H11.98a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 0 1 0 177v-2a11 11 0 0 0 11-11c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H47v-35.02a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 28 109a13 13 0 1 1 0-26c2.47 0 5.79 1.37 7.53 3.11l2.36 2.36a4.94 4.94 0 0 0 5.24.85l.84-.43A6.1 6.1 0 0 0 47 84.02V49H11.98a8.08 8.08 0 0 1-6.66-4.13l-.43-.84a6.91 6.91 0 0 1 1.22-7.56l2.36-2.36A10.06 10.06 0 0 0 11 28 11 11 0 0 0 0 17v-2a13 13 0 0 1 13 13c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84A6.1 6.1 0 0 0 11.98 47H47V11.98a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 68 11 11 11 0 0 0 79 0h2a13 13 0 0 1-13 13 12 12 0 0 1-7.53-3.11l-2.36-2.36a4.93 4.93 0 0 0-5.24-.85l-.84.43A6.1 6.1 0 0 0 49 11.98V47h35.02a8.08 8.08 0 0 1 6.66 4.13l.43.84a6.91 6.91 0 0 1-1.22 7.56l-2.36 2.36A10.06 10.06 0 0 0 85 68a11 11 0 0 0 22 0c0-1.94-1.16-4.75-2.53-6.11l-2.36-2.36a6.93 6.93 0 0 1-1.22-7.56l.43-.84a8.08 8.08 0 0 1 6.66-4.13H143V11.98a6.1 6.1 0 0 0-3.03-4.87l-.84-.43c-1.59-.8-4-.4-5.24.85l-2.36 2.36A12 12 0 0 1 124 13a13 13 0 0 1-13-13h2a11 11 0 0 0 11 11c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V47h35.02a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 179 28a13 13 0 0 1 13-13zM84.02 143a6.1 6.1 0 0 0 4.87-3.03l.43-.84c.8-1.59.4-4-.85-5.24l-2.36-2.36A12 12 0 0 1 83 124a13 13 0 1 1 26 0c0 2.47-1.37 5.79-3.11 7.53l-2.36 2.36a4.94 4.94 0 0 0-.85 5.24l.43.84a6.1 6.1 0 0 0 4.87 3.03H143v-35.02a8.08 8.08 0 0 1 4.13-6.66l.84-.43a6.91 6.91 0 0 1 7.56 1.22l2.36 2.36A10.06 10.06 0 0 0 164 107a11 11 0 0 0 0-22c-1.94 0-4.75 1.16-6.11 2.53l-2.36 2.36a6.93 6.93 0 0 1-7.56 1.22l-.84-.43a8.08 8.08 0 0 1-4.13-6.66V49h-35.02a6.1 6.1 0 0 0-4.87 3.03l-.43.84c-.79 1.58-.4 4 .85 5.24l2.36 2.36a12.04 12.04 0 0 1 3.11 7.51A13 13 0 1 1 83 68a12 12 0 0 1 3.11-7.53l2.36-2.36a4.93 4.93 0 0 0 .85-5.24l-.43-.84A6.1 6.1 0 0 0 84.02 49H49v35.02a8.08 8.08 0 0 1-4.13 6.66l-.84.43a6.91 6.91 0 0 1-7.56-1.22l-2.36-2.36A10.06 10.06 0 0 0 28 85a11 11 0 0 0 0 22c1.94 0 4.75-1.16 6.11-2.53l2.36-2.36a6.93 6.93 0 0 1 7.56-1.22l.84.43a8.08 8.08 0 0 1 4.13 6.66V143h35.02z'%3E%3C/path%3E%3C/svg%3E")` }}>
       <Navbar options={options} />
       <h1 className="text-2xl lg:text-4xl font-bold text-center my-4 text-green-400"> &gt; Pedro Borges <span className="font-bold animate-blink ml-2 border-r-[25px] border-green-400 p-0"></span></h1>
-      <p className="text-center text-green-400 text-xs md:text-md lg:text-lg p-2">Sou desenvolvedor de software, principalmente para web. Atuo como front-end e back-end, isto é, full-stack.</p>
+      <p className="text-green-400 text-xs md:text-md lg:text-lg p-2 w-full lg:w-[60ch] mx-auto text-justify">Sou um desenvolvedor full-stack especializado em criar <span className="font-bold">soluções web completas</span>, desde a interface do usuário até o back-end.</p>
 
-      <div className="bg-black text-green-400 w-[98%] mx-auto lg:w-1/2 p-4 rounded-xl my-8">
-        <div className="mb-8">
-          <p>&gt; Pedro.currentLocation</p>
+      <div className="bg-black text-green-400 w-[98%] mx-auto lg:w-1/2 rounded-xl my-8 text-xs md:text-md lg:text-lg">
+        <div className="bg-gray-900 flex items-center justify-between mb-8 text-green-400 rounded-tl-xl rounded-tr-xl">
+          <span className="uppercase font-bold px-2">Terminal</span>
+          <div className="flex ">
+            <FaRegWindowMinimize className="text-2xl md:text-4xl hover:bg-gray-500 cursor-pointer h-full p-2 mx-auto text-center" />
+            <VscChromeMaximize className="text-2xl md:text-4xl hover:bg-gray-500 cursor-pointer h-full p-2 mx-auto text-center" />
+            <MdOutlineClose className="text-2xl md:text-4xl hover:bg-red-600 cursor-pointer h-full p-2 rounded-tr-xl mx-auto text-center" />
+          </div>
+        </div>
+        <div className="mb-8 p-2">
+          <p>&gt; Pedro.localizacaoAtual</p>
           <p>"Brasília-DF"</p>
         </div>
-        <div className="mb-8">
-          <p>&gt; Pedro.contactInfo</p>
+        <div className="mb-8 p-2">
+          <p>&gt; Pedro.infoContato</p>
           <p>[
             "<a href="#" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">tpedroborges@gmail.com</a>",
             "<a href="#" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Linkedin</a>",
@@ -56,23 +71,23 @@ export default function Home() {
             ]
           </p>
         </div>
-        <div className="mb-8">
-          <p>&gt; Pedro.resume</p>
+        <div className="mb-8 p-2">
+          <p>&gt; Pedro.curriculo</p>
           <p>"<a href="#" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">pedro.pdf</a>",</p>
         </div>
-        <div className="mb-8">
-          <p>&gt; Pedro.interests</p>
+        <div className="mb-8 p-2">
+          <p>&gt; Pedro.interesses</p>
           <p>["acoustic guitar", "juggling"]</p>
         </div>
-        <div className="mb-8">
-          <p>&gt; Pedro.education</p>
+        <div className="mb-8 p-2">
+          <p>&gt; Pedro.educacao</p>
           <p>"Tecnólogo em Sistemas para Internet"</p>
         </div>
-        <div className="mb-8">
-          <p>&gt; Pedro.skills</p>
+        <div className="mb-8 p-2">
+          <p>&gt; Pedro.habilidades</p>
           <p>["Javascript", "Typescript", "React", "Next", "Prisma", "Tailwind", "Git"]</p>
         </div>
-        <div className="mb-8">
+        <div className="mb-8 p-2">
           <p>&gt; <span className="font-bold animate-blink ml-2 border-r-8 border-green-400 p-0"></span></p>
         </div>
       </div>
@@ -125,8 +140,8 @@ function Navbar({ options }: { options: OptionType[] }) {
           options.map((option: OptionType, i) => {
             return (
               <li key={i} className="group overflow-hidden">
-                <a href={ option.link }>{ option.name } </a>
-                <div className="-translate-x-[200%] group-hover:translate-x-0 h-1 mt-2 bg-green-400 w-[40px] mx-auto transition-all"></div>
+                <a href={option.link}>• {option.name} </a>
+                <div className="-translate-x-[200%] group-hover:translate-x-0 h-1 mt-2 bg-green-400 w-[60px] mx-auto transition-all"></div>
               </li>
             )
           })
