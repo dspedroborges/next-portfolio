@@ -47,8 +47,8 @@ export default function Home() {
       <p className="text-green-400 text-xs md:text-md lg:text-lg p-2 w-full lg:w-[60ch] mx-auto text-justify">Sou um desenvolvedor full-stack especializado em criar <span className="font-bold">soluções web completas</span>, desde a interface do usuário até o back-end.</p>
 
       <div className="bg-black text-green-400 w-[98%] mx-auto lg:w-1/2 rounded-xl my-8 text-xs md:text-md lg:text-lg">
-        <div className="bg-gray-900 flex items-center justify-between mb-8 text-green-400 rounded-tl-xl rounded-tr-xl">
-          <span className="uppercase font-bold px-2">Terminal</span>
+        <div className="bg-gray-900 flex items-center justify-between mb-8 text-white rounded-tl-xl rounded-tr-xl">
+          <span className="uppercase font-bold px-4">Terminal</span>
           <div className="flex ">
             <FaRegWindowMinimize className="text-2xl md:text-4xl hover:bg-gray-500 cursor-pointer h-full p-2 mx-auto text-center" />
             <VscChromeMaximize className="text-2xl md:text-4xl hover:bg-gray-500 cursor-pointer h-full p-2 mx-auto text-center" />
@@ -64,13 +64,13 @@ export default function Home() {
           <p>[
             "<Link href="mailto:tpedroborges@gmail.com" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">tpedroborges@gmail.com</Link>",
             "<Link href="https://www.linkedin.com/in/pedroborges11/" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Linkedin</Link>",
-            "<Link href="https://github.com/wdpedroborges" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Github</Link>",
+            "<Link href="https://github.com/wdpedroborges" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Github</Link>"
             ]
           </p>
         </div>
         <div className="mb-8 p-2">
           <p>&gt; Pedro.curriculo</p>
-          <p>"<a href="#" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">pedro.pdf</a>",</p>
+          <p>"<a href="#" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">pedro.pdf</a>"</p>
         </div>
         <div className="mb-8 p-2">
           <p>&gt; Pedro.interesses</p>
@@ -84,7 +84,7 @@ export default function Home() {
           <p>&gt; Pedro.habilidades</p>
           <p>["Javascript", "Typescript", "React", "Next", "Prisma", "Tailwind", "Git"]</p>
         </div>
-        <div className="mb-8 p-2">
+        <div className="mb-8 px-2 pt-2 pb-8">
           <p>&gt; <span className="font-bold animate-blink ml-2 border-r-8 border-green-400 p-0"></span></p>
         </div>
       </div>
