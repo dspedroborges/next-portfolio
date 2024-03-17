@@ -64,7 +64,7 @@ export default function Home() {
           <p>[
             "<Link href="mailto:tpedroborges@gmail.com" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">tpedroborges@gmail.com</Link>",
             "<Link href="https://www.linkedin.com/in/dspedroborges/" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Linkedin</Link>",
-            "<Link href="https://github.com/wdpedroborges" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Github</Link>"
+            "<Link href="https://github.com/dspedroborges" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Github</Link>"
             ]
           </p>
         </div>
@@ -130,8 +130,8 @@ export default function Home() {
               </Link>
             </li>
             <li className="text-green-400 text-center">
-              <Link className="hover:underline" href="https://github.com/wdpedroborges" target="_blank">
-                <span className="font-bold"><BsGithub className="inline" /> Github: </span><span>wdpedroborges</span>
+              <Link className="hover:underline" href="https://github.com/dspedroborges" target="_blank">
+                <span className="font-bold"><BsGithub className="inline" /> Github: </span><span>dspedroborges</span>
               </Link>
             </li>
           </ul>
