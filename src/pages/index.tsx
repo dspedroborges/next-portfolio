@@ -63,7 +63,7 @@ export default function Home() {
           <p>&gt; Pedro.infoContato</p>
           <p>[
             "<Link href="mailto:tpedroborges@gmail.com" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">tpedroborges@gmail.com</Link>",
-            "<Link href="https://www.linkedin.com/in/pedroborges11/" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Linkedin</Link>",
+            "<Link href="https://www.linkedin.com/in/dspedroborges/" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Linkedin</Link>",
             "<Link href="https://github.com/wdpedroborges" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">Github</Link>"
             ]
           </p>
@@ -125,8 +125,8 @@ export default function Home() {
               </Link>
             </li>
             <li className="text-green-400 text-center">
-              <Link className="hover:underline" href="https://www.linkedin.com/in/pedroborges11/" target="_blank">
-                <span className="font-bold"><BsLinkedin className="inline" /> Linkedin: </span><span>pedroborges11</span>
+              <Link className="hover:underline" href="https://www.linkedin.com/in/dspedroborges/" target="_blank">
+                <span className="font-bold"><BsLinkedin className="inline" /> Linkedin: </span><span>dspedroborges</span>
               </Link>
             </li>
             <li className="text-green-400 text-center">
