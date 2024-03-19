@@ -17,26 +17,19 @@ const options = [
 
 const projects = [
   {
-    title: "Teste",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo laudantium cumque suscipit, debitis obcaecati tempore ipsum minus libero rem eos consectetur ab magni? Optio maxime assumenda numquam reiciendis illo. Ipsum.",
+    title: "Loja com Afiliado",
+    description: "Loja que permite registrar afiliados, os quais terão seus próprios links para que possam realizar vendas, conferir o saldo e solicitar um saque, que será notificado ao admin.",
     techs: ["Next", "Prisma", "Tailwind"],
     liveDemoLink: "",
-    codeLink: "",
+    codeLink: "https://github.com/dspedroborges/lojacomafiliado",
   },
   {
-    title: "Teste",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo laudantium cumque suscipit, debitis obcaecati tempore ipsum minus libero rem eos consectetur ab magni? Optio maxime assumenda numquam reiciendis illo. Ipsum.",
+    title: "Landing Page",
+    description: "Esta não é apenas uma landing page comum. Além de permitir o registro das informações, realiza estatística dos leads registrados e possui um buscador com filtros pré-determinados para obter os emails e telefones somente de determinados grupos de leads.",
     techs: ["Next", "Prisma", "Tailwind"],
     liveDemoLink: "",
-    codeLink: "",
+    codeLink: "https://github.com/dspedroborges/landingpage",
   },
-  {
-    title: "Teste",
-    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo laudantium cumque suscipit, debitis obcaecati tempore ipsum minus libero rem eos consectetur ab magni? Optio maxime assumenda numquam reiciendis illo. Ipsum.",
-    techs: ["Next", "Prisma", "Tailwind"],
-    liveDemoLink: "",
-    codeLink: "",
-  }
 ];
 
 export default function Home() {
@@ -95,7 +88,7 @@ export default function Home() {
           <div className="h-2 mt-4 bg-green-400 w-[75px] mx-auto"></div>
         </div>
 
-        <div className="flex justify-around items-center p-8 flex-wrap gap-4">
+        <div className="flex justify-around items-center py-8 p-2 flex-wrap gap-4">
           {
             projects.map((project, i) => {
               return (
