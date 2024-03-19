@@ -141,13 +141,14 @@ export default function Home() {
 function Navbar({ options }: { options: OptionType[] }) {
   return (
     <nav className="w-full bg-black bg-opacity-75 text-green-400 fixed top-0 z-50 h-[65px]">
-      <ul className="flex justify-around items-center p-4">
+      <ul className="flex items-center md:justify-end h-full md:pr-8 md:gap-8 justify-around pr-0 gap-0">
         {
           options.map((option: OptionType, i) => {
             return (
-              <li key={i} className="group overflow-hidden">
-                <a href={option.link}>• {option.name} </a>
-                <div className="-translate-x-[200%] group-hover:translate-x-0 h-1 mt-2 bg-green-400 w-[60px] mx-auto transition-all"></div>
+              <li key={i} className="group overflow-hidden relative h-full flex items-center">
+                <Link href={option.link} className="group-hover:text-white">{option.name} </Link>
+                <div className="absolute bottom-[8px] h-1 bg-green-400 w-[60px] mx-auto transition-all"></div>
+                <div className="absolute -left-[200%] group-hover:left-0 bottom-[8px] h-1 bg-white w-[60px] mx-auto transition-all"></div>
               </li>
             )
           })
