@@ -63,7 +63,7 @@ export default function Home() {
         </div>
         <div className="mb-8 p-2">
           <p>&gt; Pedro.curriculo</p>
-          <p>"<a href="#" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">pedro.pdf</a>"</p>
+          <p>"<Link href="/curriculo.pdf" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">pedro.pdf</Link>"</p>
         </div>
         <div className="mb-8 p-2">
           <p>&gt; Pedro.interesses</p>
@@ -176,8 +176,8 @@ function ProjectCard({ title, description, techs, liveDemoLink, codeLink }: { ti
         </div>
 
         <div className="flex gap-2 justify-center">
-          <a href={liveDemoLink} className="bg-green-400 text-black p-2 rounded-xl font-bold hover:bg-green-300">Live Demo <FiExternalLink className="inline" /> </a>
-          <a href={codeLink} className="bg-black text-green-400 p-2 rounded-xl font-bold hover:bg-gray-800">Código <BsGithub className="inline" /> </a>
+          <Link target="_blank" href={liveDemoLink} className={`${liveDemoLink !== "" ? "bg-green-400 hover:bg-green-300" : "bg-gray-400 hover:bg-gray-300"} text-black p-2 rounded-xl font-bold`}>Live Demo <FiExternalLink className="inline" /> </Link>
+          <Link target="_blank" href={codeLink} className="bg-black text-green-400 p-2 rounded-xl font-bold hover:bg-gray-800">Código <BsGithub className="inline" /> </Link>
         </div>
       </div>
     </div>
