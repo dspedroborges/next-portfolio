@@ -19,7 +19,7 @@ const projects = [
   {
     title: "Loja com Afiliado",
     description: "Loja que permite registrar afiliados, os quais terão seus próprios links para que possam realizar vendas, conferir o saldo e solicitar um saque, que será notificado ao admin.",
-    techs: ["Next", "Prisma", "Tailwind"],
+    techs: ["Next", "Prisma", "Tailwind", "Stripe"],
     liveDemoLink: "",
     codeLink: "https://github.com/dspedroborges/lojacomafiliado",
   },
@@ -61,14 +61,10 @@ export default function Home() {
             ]
           </p>
         </div>
-        <div className="mb-8 p-2">
+        {/* <div className="mb-8 p-2">
           <p>&gt; Pedro.curriculo</p>
           <p>"<Link href="/curriculo.pdf" target="_blank" className="text-blue-300 hover:text-blue-400 hover:underline">pedro.pdf</Link>"</p>
-        </div>
-        <div className="mb-8 p-2">
-          <p>&gt; Pedro.interesses</p>
-          <p>["violão", "malabarismo"]</p>
-        </div>
+        </div> */}
         <div className="mb-8 p-2">
           <p>&gt; Pedro.educacao</p>
           <p>"Tecnólogo em Sistemas para Internet"</p>
