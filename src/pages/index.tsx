@@ -17,18 +17,11 @@ const options = [
 
 const projects = [
   {
-    title: "Loja com Afiliado",
-    description: "Loja que permite registrar afiliados, os quais terão seus próprios links para que possam realizar vendas, conferir o saldo e solicitar um saque, que será notificado ao admin.",
-    techs: ["Next", "Prisma", "Tailwind", "Stripe"],
+    title: "---",
+    description: "---",
+    techs: ["---", "---", "---", "---"],
     liveDemoLink: "",
-    codeLink: "https://github.com/dspedroborges/lojacomafiliado",
-  },
-  {
-    title: "Landing Page",
-    description: "Esta não é apenas uma landing page comum. Além de permitir o registro das informações, realiza estatística dos leads registrados e possui um buscador com filtros pré-determinados para obter os emails e telefones somente de determinados grupos de leads.",
-    techs: ["Next", "Prisma", "Tailwind"],
-    liveDemoLink: "",
-    codeLink: "https://github.com/dspedroborges/landingpage",
+    codeLink: "https://github.com/dspedroborges/---",
   },
 ];
 
