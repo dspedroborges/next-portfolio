@@ -19,20 +19,20 @@ const projects = [
   {
     title: "Simplesis",
     description: "Sistema simples e acessível para pequenas empresas que precisam gerenciar o seu negócio. Os dados dos clientes ficam criptografados na nuvem. Contém diversas funcionalidades, como agenda, gráficos, registro de gastos e vendas etc.",
-    techs: ["Next 14", "React", "Typescript", "Tailwind", "Prisma", "Stripe"],
+    techs: ["Next 14", "React", "Typescript", "Tailwind", "Prisma", "Stripe", "Chart.JS", "Node Crypto", "bcryptjs"],
     liveDemoLink: "https://simplesis.vercel.app/",
-    codeLink: "https://github.com/dspedroborges/---",
+    codeLink: "",
   },
   {
     title: "Maus Pensamentos",
-    description: "Sistema para análise semanal de pensamentos disfuncionais, criado com base no trabalho de Irismar	Reis de Oliveira.",
-    techs: ["Next 14", "React", "Typescript", "Tailwind",],
+    description: "Sistema para análise semanal de pensamentos disfuncionais, criado com base no trabalho de Irismar	Reis de Oliveira. Conforme o usuário faz os testes semanalmente, o algoritmo armazena suas pontuações no localStorage, de tal maneira que seu histórico pode ser visualizado em um gráfico de linha.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind", "Chart.JS"],
     liveDemoLink: "https://mauspensamentos.vercel.app/",
     codeLink: "https://github.com/dspedroborges/maus-pensamentos",
   },
   {
     title: "SWOT Análise",
-    description: "Ferramenta auxiliar para análise da qualidade de coisas, bem como tomada de decisões.",
+    description: "Ferramenta auxiliar para análise da qualidade de coisas, bem como tomada de decisões. Conforme você escreve nos espaços designados, o algoritmo calcula o percentual de aspectos positivos, para avaliar se algo é bom ou se a decisão deve ser tomada.",
     techs: ["Next 14", "React", "Typescript", "Tailwind",],
     liveDemoLink: "https://swotanalise.vercel.app/",
     codeLink: "https://github.com/dspedroborges/swot",
@@ -169,19 +169,19 @@ function ProjectCard({ title, description, techs, liveDemoLink, codeLink }: { ti
         <h3 className="font-bold text-center">{title}</h3>
         <p className="w-[90%] lg:w-[45ch] text-justify">{description}</p>
 
-        <div className="flex justify-center items-center gap-2 flex-wrap">
+        <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
           {
             techs.map((tech, i) => {
               return (
-                <span key={i} className="border p-2 border-green-400 rounded cursor-pointer hover:-translate-y-1">{tech}</span>
+                <span key={i} className="border p-2 border-green-400 rounded cursor-pointer hover:-translate-y-1 text-center">{tech}</span>
               )
             })
           }
         </div>
 
         <div className="flex gap-2 justify-center">
-          <Link target="_blank" href={liveDemoLink} className={`${liveDemoLink !== "" ? "bg-green-400 hover:bg-green-300" : "bg-gray-400 hover:bg-gray-300"} text-black p-2 rounded-xl font-bold`}>Live Demo <FiExternalLink className="inline" /> </Link>
-          <Link target="_blank" href={codeLink} className="bg-black text-green-400 p-2 rounded-xl font-bold hover:bg-gray-800">Código <BsGithub className="inline" /> </Link>
+          <Link target="_blank" href={liveDemoLink} className={`${liveDemoLink !== "" ? "bg-green-400 hover:bg-green-300" : "bg-gray-400 hover:bg-gray-300"} text-black p-2 rounded-xl font-bold flex items-center gap-2`}><FiExternalLink className="inline" /> Live Demo </Link>
+          <Link target="_blank" href={codeLink} className={`${codeLink !== "" ? "bg-black text-green-400 hover:bg-gray-800" : "bg-gray-400 text-black hover:bg-gray-300"} p-2 rounded-xl font-bold flex items-center gap-2`}><BsGithub className="inline" /> {codeLink === "" ? "Fechado" : "Código"}</Link>
         </div>
       </div>
     </div>
