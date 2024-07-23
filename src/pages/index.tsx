@@ -132,8 +132,8 @@ export default function Home() {
         <div className="flex justify-center pt-12 pb-28 px-2 lg:px-12">
           <ul className="flex flex-col justify-center items-start gap-4">
             <li className="text-green-400 text-center">
-              <Link className="hover:underline" href="https://wa.me/5561998746331?text=Olá, Pedro%21" target="_blank">
-                <span className="font-bold"><BsWhatsapp className="inline" /> Whatsapp: </span><span>(61) 9 9874-6331</span>
+              <Link className="hover:underline" href="https://wa.me/5561996524269" target="_blank">
+                <span className="font-bold"><BsWhatsapp className="inline" /> Whatsapp: </span><span>(61) 9 9652-4269</span>
               </Link>
             </li>
             <li className="text-green-400 text-center">
