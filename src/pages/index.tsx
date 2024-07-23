@@ -184,7 +184,7 @@ function Navbar({ options }: { options: OptionType[] }) {
 
 function ProjectCard({ title, description, techs, liveDemoLink, codeLink }: { title: string, description: string, techs: string[], liveDemoLink: string, codeLink: string }) {
   return (
-    <div className="bg-gray-900 text-white p-4 rounded-xl flex flex-col gap-4 justify-start items-center">
+    <div className="bg-gray-900 text-white py-8 p-4 rounded-xl flex flex-col gap-4 justify-start items-center">
       <div className="h-[100px] w-full bg-black rounded-xl bg-fixed" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234ade80' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}></div>
       <div className="flex flex-col items-center gap-8 mt-4">
         <h3 className="font-bold text-center">{title}</h3>
