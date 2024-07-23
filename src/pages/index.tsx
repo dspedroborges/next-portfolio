@@ -37,6 +37,27 @@ const projects = [
     liveDemoLink: "https://swotanalise.vercel.app/",
     codeLink: "https://github.com/dspedroborges/swot",
   },
+  {
+    title: "Treino Mix",
+    description: "Sistema com diversas funcionalidades para criação de fichas de treinamento, visualização das fichas, treinamento em tempo real, posts, sorteios, afiliados etc.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind", "Prisma", "Stripe", "Chart.JS", "Node Crypto", "bcryptjs"],
+    liveDemoLink: "https://treinomix.vercel.app",
+    codeLink: "",
+  },
+  {
+    title: "Instituto NS",
+    description: "Site desenvolvido para uma clínica de estética. Além disso, existem 2 landing pages feitas para esse site, que podem ser encontradas nas rotas /landing-page/toxina-botulinica e /landing-page/criomodelagem  ",
+    techs: ["Next 14", "React", "Typescript", "Tailwind",],
+    liveDemoLink: "https://institutons.com.br",
+    codeLink: "",
+  },
+  {
+    title: "LDS Guincho",
+    description: "Site desenvolvido para uma empresa de serviço de guincho. Trata-se de um site simples, feito apenas para exibir a marca da empresa e seus contatos.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind",],
+    liveDemoLink: "https://ldsguincho.com.br",
+    codeLink: "",
+  },
 ];
 
 export default function Home() {
@@ -91,7 +112,7 @@ export default function Home() {
           <div className="h-2 mt-4 bg-green-400 w-[75px] mx-auto"></div>
         </div>
 
-        <div className="flex justify-around items-center py-8 p-2 flex-wrap gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
           {
             projects.map((project, i) => {
               return (
@@ -163,9 +184,9 @@ function Navbar({ options }: { options: OptionType[] }) {
 
 function ProjectCard({ title, description, techs, liveDemoLink, codeLink }: { title: string, description: string, techs: string[], liveDemoLink: string, codeLink: string }) {
   return (
-    <div className="bg-gray-900 text-white p-4 rounded-xl flex flex-col gap-4 justify-center items-center">
+    <div className="bg-gray-900 text-white p-4 rounded-xl flex flex-col gap-4 justify-start items-center">
       <div className="h-[100px] w-full bg-black rounded-xl bg-fixed" style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234ade80' fill-opacity='1'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")` }}></div>
-      <div className="flex flex-col items-center gap-8">
+      <div className="flex flex-col items-center gap-8 mt-4">
         <h3 className="font-bold text-center">{title}</h3>
         <p className="w-[90%] lg:w-[45ch] text-justify">{description}</p>
 
