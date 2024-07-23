@@ -17,11 +17,25 @@ const options = [
 
 const projects = [
   {
-    title: "---",
-    description: "---",
-    techs: ["---", "---", "---", "---"],
-    liveDemoLink: "",
+    title: "Simplesis",
+    description: "Sistema simples e acessível para pequenas empresas que precisam gerenciar o seu negócio. Os dados dos clientes ficam criptografados na nuvem. Contém diversas funcionalidades, como agenda, gráficos, registro de gastos e vendas etc.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind", "Prisma", "Stripe"],
+    liveDemoLink: "https://simplesis.vercel.app/",
     codeLink: "https://github.com/dspedroborges/---",
+  },
+  {
+    title: "Maus Pensamentos",
+    description: "Sistema para análise semanal de pensamentos disfuncionais, criado com base no trabalho de Irismar	Reis de Oliveira.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind",],
+    liveDemoLink: "https://mauspensamentos.vercel.app/",
+    codeLink: "https://github.com/dspedroborges/maus-pensamentos",
+  },
+  {
+    title: "SWOT Análise",
+    description: "Ferramenta auxiliar para análise da qualidade de coisas, bem como tomada de decisões.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind",],
+    liveDemoLink: "https://swotanalise.vercel.app/",
+    codeLink: "https://github.com/dspedroborges/swot",
   },
 ];
 
