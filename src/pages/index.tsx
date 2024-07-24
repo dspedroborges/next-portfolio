@@ -24,6 +24,13 @@ const projects = [
     codeLink: "",
   },
   {
+    title: "Busca Auxiliado",
+    description: "Com uma base de dados feita com os dados do Portal da Transparência do governo, o sistema realiza buscas personalizadas de 68 milhões de pessoas que receberam auxílio emergencial.",
+    techs: ["Next 14", "React", "Typescript", "Tailwind", "sqlite3"],
+    liveDemoLink: "https://buscaauxiliado.vercel.app/",
+    codeLink: "https://github.com/dspedroborges/busca-auxiliados",
+  },
+  {
     title: "Maus Pensamentos",
     description: "Sistema para análise semanal de pensamentos disfuncionais, criado com base no trabalho de Irismar	Reis de Oliveira. Conforme o usuário faz os testes semanalmente, o algoritmo armazena suas pontuações no localStorage, de tal maneira que seu histórico pode ser visualizado em um gráfico de linha.",
     techs: ["Next 14", "React", "Typescript", "Tailwind", "Chart.JS"],
