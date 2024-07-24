@@ -24,10 +24,10 @@ const projects = [
     codeLink: "",
   },
   {
-    title: "Busca Auxiliado",
+    title: "Busca Auxiliados",
     description: "Com uma base de dados feita com os dados do Portal da Transparência do governo, o sistema realiza buscas personalizadas de 68 milhões de pessoas que receberam auxílio emergencial.",
     techs: ["Next 14", "React", "Typescript", "Tailwind", "sqlite3"],
-    liveDemoLink: "https://buscaauxiliado.vercel.app/",
+    liveDemoLink: "https://buscaauxiliados.vercel.app/",
     codeLink: "https://github.com/dspedroborges/busca-auxiliados",
   },
   {
