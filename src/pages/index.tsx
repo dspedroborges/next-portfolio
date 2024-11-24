@@ -113,7 +113,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="projetos" className="pt-20">
+      {/* <div id="projetos" className="pt-20">
         <div>
           <h2 className="text-2xl font-bold text-center text-green-400">Projetos</h2>
           <div className="h-2 mt-4 bg-green-400 w-[75px] mx-auto"></div>
@@ -128,7 +128,7 @@ export default function Home() {
             })
           }
         </div>
-      </div>
+      </div> */}
 
       <div id="contato" className="pt-20">
         <div>
